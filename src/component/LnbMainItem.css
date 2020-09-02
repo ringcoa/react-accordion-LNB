@@ -1,0 +1,15 @@
+.LnbMain_item {width: 100%; border-bottom: 1px solid #606060;}
+.LnbMain_item .main_Link {display: block;  width: 100%; padding: 10px 0 10px 10px; background-color: #b5b5b5; text-align: left; font-size: 20px; font-weight: bold; color: #404040;}
+
+
+.sub_lnb { overflow: hidden; transition: max-height 0.7s; max-height : 0; background-color: #6d6d6d;}
+.sub_lnb li { border-bottom: 1px solid #5b5b5b;}
+.sub_lnb li a {padding: 10px 0 10px 10px; display: block; color: #fff;}
+.sub_lnb li:hover a{background-color: #555; color: #fff;}
+
+.LnbMain_item:hover .sub_lnb{
+    max-height: 10em;
+}
+.main-active {background-color: #16a085 !important; color: #fff !important;}
+.main-active~ul {max-height: 10em !important;}
+.sub-active {background-color: #545454; color: #fff !important;}

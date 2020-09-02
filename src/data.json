@@ -1,0 +1,29 @@
+{
+    "data" : [
+        {
+            "id" : "info",
+            "name" : "소개",
+            "path" : "/info"
+        },
+        {
+            "id" : "view",
+            "name" : "볼거리" ,
+            "path" : "/view",
+            "sub" : [
+                {"subName" : "다이나믹 페스티벌" , "path" : "/view/subview1"},
+                {"subName" : "한지문화제" , "path" : "/view/subview2"},
+                {"subName" : "소금산 출렁다리" , "path" : "/view/subview3"}
+            ]
+        },
+        {
+            "id" : "food",
+            "name" : "먹거리",
+            "path" : "/food",
+            "sub" : [
+                {"subName" : "복숭아 빵" , "path" : "/food/subfood1"},
+                {"subName" : "출렁다리 출렁주" , "path" : "/food/subfood2"}
+                
+            ]
+        }
+    ]
+}
