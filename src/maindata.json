@@ -1,0 +1,44 @@
+{
+    "data" :[
+        {   "depth1" : ["볼거리" , "먹거리"],
+            "depth2" : [{"view" : ["다이나믹 페스티벌" ,"한지문화제" , "소금산 출렁다리"] , "food" : ["복숭아빵" , "출렁다리출렁주"]}],
+            "single" :{
+                "view" : [
+                    {   
+                        "id" : "view1",
+                        "name" : "다이나믹 페스티벌",
+                        "info" : "매년 여름 열리는 페스티벌",
+                        "path" : "view/subview1"
+                    },
+                    {
+                        "id" : "view2",
+                        "name" : "한지문화제",
+                        "info" : "한지 페션쇼 등 다양한 볼거리가 있는 한지문화제",
+                        "path" : "view/subview2"
+                    },
+                    {
+                        "id" : "view3",
+                        "name" : "소금산 출렁다리",
+                        "info" : "간현에 위치한 출렁다리",
+                        "path" : "view/subview3"
+                    }
+                    
+                ],
+                "food" : [
+                    {
+                        "id" : "food1",
+                        "name" : "복숭아빵",
+                        "info" : "원주에서 재배한 복숭아로 만든 지역 특산품",
+                        "path" : "food/subfood1"
+                    },
+                    {
+                        "id" : "food2",
+                        "name" : "출렁다리 출렁주",
+                        "info" : "출렁다리 출렁주 막걸리",
+                        "path" : "food/subfood2"
+                    }
+                ]
+            }
+        }
+    ]
+}

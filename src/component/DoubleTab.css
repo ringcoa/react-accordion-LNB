@@ -1,0 +1,4 @@
+.depth1_btn {padding: 10px 50px; border: 1px solid #ccc; margin-right: 15px;font-weight: bold; border-bottom-width: 0;}
+.content { border: 1px solid #ccc;}
+.depth2_btn {padding: 8px 45px; border: 1px solid #ccc; border-top-width: 0; border-left-width: 0;}
+.content_text {width: 100%; text-align: center; padding: 40px 0; background-color: #f0f0f0;}

@@ -1,13 +1,14 @@
 import React from 'react';
 import {Route} from 'react-router-dom'
 import Page from './pages/Page'
-import MainInfo from './pages/MainInfo';
+import Double from './pages/Double';
+import Single from './pages/Single';
 
 function App() {
   return (
     <>
-     <Route path="/" exact exact component={MainInfo} />
-      <Route path="/:LnbMain" exact component={MainInfo}/>
+      <Route path={['/' , '/info']} exact component={Double} />
+      <Route path={['/view' , '/food']} exact component={Single} />
       <Route path="/:LnbMain/:LnbSub" exact component={Page} />
     </>
   );

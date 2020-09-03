@@ -1,0 +1,7 @@
+.mainContent {}
+.mainContent .tab {position: relative;  width: 80%; height: 45px; line-height: 45px;}
+.mainContent .tab button {float: left; width: 220px; height: 100%;  border: 1px solid #ddd; border-bottom-width: 0; cursor: pointer;}
+.mainContent .tab button+button {margin-left: 15px; }
+.mainContent .singleContent { width: 100%; padding: 40px 0; background-color: #f1f1f1; text-align: center; line-height: 45px; font-size: 20px;}
+.button_active {background-color: #16a085; color: #fff;}
+.link {display: block;}

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link , NavLink } from 'react-router-dom';
 import './LnbMainItem.css'
 
-function LnbMainItem({item , main}) {
+function LnbMainItem({item}) {
     const subList = item.sub
 
     return (
