@@ -4,7 +4,7 @@ import LnbMainItem from './LnbMainItem'
 import './LnbMain.css'
 
 function LnbMain() {
-    const LnbList = (data.data)
+    const LnbList = (data.data);
     return (
     <>
         <ul className="LnbMain">

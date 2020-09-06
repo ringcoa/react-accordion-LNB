@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { Link , NavLink } from 'react-router-dom';
-import './LnbMainItem.css'
+import './LnbMainItem.css';
 
 function LnbMainItem({item}) {
-    const subList = item.sub
+    const subList = item.sub;
 
     return (
         <li className="LnbMain_item" id={item.id}>
@@ -15,4 +15,4 @@ function LnbMainItem({item}) {
     )
 }
 
-export default LnbMainItem
+export default LnbMainItem;

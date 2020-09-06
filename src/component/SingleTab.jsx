@@ -1,30 +1,23 @@
-import React, { useState, useEffect ,memo} from 'react'
-import data from '../maindata.json'
+import React, { useState, useEffect ,memo} from 'react';
+import data from '../maindata.json';
 import "./SingleTab.css";
 import { Link } from 'react-router-dom';
 
 const SingleTab =memo(({path}) =>{
-    let singledata = data.data[0].single[path];
-    console.log(singledata)
-    let [content , setContent] = useState('');
-    let [classList , setClassList] = useState('');
-    let [subPath , setSubPath ] = useState(singledata[0].path)
+    const singledata = data.data[0].single[path];
+    const [content , setContent] = useState('');
+    const [subPath , setSubPath ] = useState(singledata[0].path);
+    const [clickTabIdx , setClickTabIdx] = useState(0);
 
     useEffect(() => {
-        setContent(singledata[0].info)
+        setContent(singledata[0].info);
         
     }, [path])
-    //TODO: Tab 버튼을 클릭했을떄 해당 탭만 active클래스 추가
-    useEffect(() => {
-        setClassList('')
-    }, [content])
-    
-    const clickTab= (e ,idx)=>{
+
+    const clickTab= (idx)=>{
         setContent(singledata[idx].info);
-        setSubPath(singledata[idx].path)
-        const target = e.target;
-        console.log(target.parentNode)
-        //target.classList.add('main-active')
+        setSubPath(singledata[idx].path);
+        setClickTabIdx(idx);
     }
 
 
@@ -34,7 +27,7 @@ const SingleTab =memo(({path}) =>{
             <h1></h1>
             <div>
                 <div className="tab">   
-                    {singledata.map( (item ,idx) =><button key={item.id} className={classList} onClick={(e) => clickTab(e, idx)}>{item.name}</button>)}
+                    {singledata.map( (item ,idx) =><button key={item.id} className={idx == clickTabIdx ? 'button_active' : ''} onClick={(e) => clickTab(idx)}>{item.name}</button>)}
                 </div >
                 
                 <div className="singleContent">{content} <Link className="link" to={subPath} >자세히보기</Link></div>
@@ -43,10 +36,4 @@ const SingleTab =memo(({path}) =>{
     )
 })
 
-
-// <li>
-//     <p onClick={clickTab}>1</p>
-//     {viewContent? <div>CONTENT1</div> : ''}
-// </li>
-
-export default SingleTab
+export default SingleTab;

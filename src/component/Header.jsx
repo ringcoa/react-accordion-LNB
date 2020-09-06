@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 import data from '../data.json';
-import logo from '../img/logo.jpg'
-import './Header.css'
+import logo from '../img/logo.jpg';
+import './Header.css';
 import { Link,NavLink } from 'react-router-dom';
 
 function Header() {
-    const MainNavList = data.data
+    const MainNavList = data.data;
     return (
         <>
             <h1><Link to="/"><img src={logo} alt=""/></Link></h1>
@@ -17,4 +17,4 @@ function Header() {
     )
 }
 
-export default Header
+export default Header;
